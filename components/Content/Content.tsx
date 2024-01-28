@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 const Content = () => {
   React.useEffect(() => {
     AOS.init({
-      duration: 2000
+      duration: 1000
     })
   }, [])
   return (
@@ -22,7 +22,7 @@ const Content = () => {
           <br /> <span className='font-bold'>built by great</span>{' '}
           <span className='text-purple-800 font-bold'> teams</span>
         </div>
-        <div className='text-2xl lg:text-m'>
+        <div className='text-m lg:text-2zl'>
           We help build and manage a team of world-class developers <br /> to
           bring your vision to life
         </div>
