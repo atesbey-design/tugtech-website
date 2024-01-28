@@ -7,7 +7,7 @@ const Person = [
   {
     name: 'Bonnie Green',
     role: 'Visual Designer',
-    imageUrl: '/images/Ellipse1.png'
+    imageUrl: '/images/.png'
   },
   {
     name: 'Romeena De Silva',
@@ -328,6 +328,8 @@ const PartnerShip = () => {
               {Person.map(person => (
                 <div className='flex flex-col items-center' key={0}>
                   <Image
+                  width={50}
+                  height={50}
                     src={person.imageUrl}
                     alt=''
                     className='w-50 h-50 rounded-full mb-4'

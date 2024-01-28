@@ -1,8 +1,9 @@
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import AOS from 'aos'
+
 import 'aos/dist/aos.css'
+
 
 const CardData = [
   {
@@ -15,7 +16,6 @@ const CardData = [
     profile: '/images/Ellipse1.png',
     name: 'Neil Sims',
     role: 'CEO',
-    position: '',
     animation: 'fade-up'
   },
   {
@@ -28,7 +28,6 @@ const CardData = [
     profile: '/images/Ellipse2.png',
     name: 'Neil Sims',
     role: 'CEO',
-    position: 'reverse',
     animation: 'fade-down'
   },
   {
@@ -41,20 +40,22 @@ const CardData = [
     profile: '/images/Ellipse3.png',
     name: 'Neil Sims',
     role: 'CEO',
-    position: '',
     animation: 'fade-up'
   }
 ]
 
 const Building = () => {
+
   return (
     <div className='grid grid-flow-row gap-16 px-32'>
       {CardData.map((card, index) => (
         <div
-          data-aos='fade-down '
+          // data-aos='fade-down '
           data-aos-duration='3000'
           key={index}
-          className={`flex flex-row-${card.position} w-full justify-around  items-center bg-${card.color}  `}
+          className={`flex w-full justify-around  items-center bg-${card.color} 
+          ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}
+          `}
         >
           <Image
             className='  rounded-t-lg   md:rounded-none md:rounded-s-lg'

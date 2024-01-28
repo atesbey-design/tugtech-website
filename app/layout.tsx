@@ -18,6 +18,38 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/images/logo.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+        <title>TugTek</title>
+        <meta
+          name="description"
+          content="TugTek yeni nesil elektronik çözüm."
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tugtek" />
+        <meta name="twitter:creator" content="@tugtek" />
+        <meta name="twitter:title" content="TugTek" />
+        <meta
+          name="twitter:description"
+          content="TugTek yeni nesil elektronik çözüm."
+        />
+        <meta name="twitter:image" content="/images/logo.png" />
+        <meta property="og:title" content="TugTek" />
+        <meta
+          property="og:description"
+          content="TugTek yeni nesil elektronik çözüm."
+        />
+        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:url" content="https://tugtek.com" />
+        <meta property="og:site_name" content="TugTek" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+      </head>
       <body className='w-screen h-full '>
         <div >
           <Navbar />
