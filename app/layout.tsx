@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +22,7 @@ export default function RootLayout ({
     <html lang='en'>
       <head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/images/logo.png" />
+        <link rel="icon" href="logo.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
         <title>TugTek</title>
@@ -36,25 +38,28 @@ export default function RootLayout ({
           name="twitter:description"
           content="TugTek yeni nesil elektronik çözüm."
         />
-        <meta name="twitter:image" content="/images/logo.png" />
+        <meta name="twitter:image" content="logo.png" />
         <meta property="og:title" content="TugTek" />
         <meta
           property="og:description"
           content="TugTek yeni nesil elektronik çözüm."
         />
-        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:image" content="logo.png" />
         <meta property="og:url" content="https://tugtek.com" />
         <meta property="og:site_name" content="TugTek" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="apple-touch-icon" href="logo.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </head>
       <body className='w-screen h-full '>
         <div >
           <Navbar />
         </div>
-        <div className=''>{children}</div>
+        <div className=''>{children}
+        <SpeedInsights />
+        <Analytics />
+        </div>
         <div className='mt-32'>
           <Footer />
         </div>

@@ -39,7 +39,7 @@ const CaseStudies = () => {
         
           key={index}
           data-aos={card.animation}
-     data-aos-offset="100"
+     data-aos-offset="10"
      data-aos-easing="ease-in-sine" 
           className={`flex flex-row w-full justify-around  items-center bg-${card.color} border border-gray-200 rounded-lg shadow  hover:bg-gray-100 `}
         >
