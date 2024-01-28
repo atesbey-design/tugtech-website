@@ -51,8 +51,8 @@ const Building = () => {
     <div className='grid grid-flow-row gap-16 px-32'>
       {CardData.map((card, index) => (
         <div
-        data-aos={card.animation}
-     data-aos-duration="3000"
+          data-aos='fade-down '
+          data-aos-duration='3000'
           key={index}
           className={`flex flex-row-${card.position} w-full justify-around  items-center bg-${card.color}  `}
         >
@@ -70,7 +70,7 @@ const Building = () => {
             <div className='mb-3 font-normal text-balance text-gray-700 dark:text-gray-400'>
               {card.text} <br /> <br />
               <span className='text-fuchsia-600 italic font-medium pl-2 border-fuchsia-700 border-l-2'>
-                "{card.quote}"
+                {card.quote}
               </span>
               <div className='w-full p-2'>
                 <div className='flow-root'>

@@ -28,7 +28,7 @@ const Content = () => {
         </div>
         <div>
           <button className='h-14 bg-gradient-to-r bg-blue-700 rounded text-white p-2 px-4'>
-            Let's get started
+            Lets get started
           </button>
         </div>
       </div>

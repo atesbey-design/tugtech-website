@@ -35,18 +35,20 @@ const PartnerShip = () => {
   return (
     <>
       <section className='bg-white grid grid-flow-row  gap-36'>
-        <div
-        className='py-8'>
-         <div
-         data-aos="fade-down"
-         data-aos-easing="linear"
-         data-aos-duration="1500" 
-         > <h2 className='mb-8 lg:mb-16 text-3xl leading-loose tracking-wide  md:text-4xl px-32'>
-            Meet the People
-            <span className='font-bold'>
-              <br /> We are Working With
-            </span>
-          </h2></div>
+        <div className='py-8'>
+          <div
+            data-aos='fade-down'
+            data-aos-easing='linear'
+            data-aos-duration='1500'
+          >
+            {' '}
+            <h2 className='mb-8 lg:mb-16 text-3xl leading-loose tracking-wide  md:text-4xl px-32'>
+              Meet the People
+              <span className='font-bold'>
+                <br /> We are Working With
+              </span>
+            </h2>
+          </div>
           <div className='grid grid-cols-2 gap-8 w-full h-24 bg-gray-200 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400'>
             <a href='#' className='flex justify-center items-center'>
               <svg
@@ -324,8 +326,8 @@ const PartnerShip = () => {
             </div>
             <div className='grid grid-flow-col gap-4 items-center mb-10 '>
               {Person.map(person => (
-                <div className='flex flex-col items-center'>
-                  <img
+                <div className='flex flex-col items-center' key={0}>
+                  <Image
                     src={person.imageUrl}
                     alt=''
                     className='w-50 h-50 rounded-full mb-4'
