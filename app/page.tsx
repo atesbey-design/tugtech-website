@@ -21,7 +21,7 @@ export default function Home () {
         <Services />
       </div>
 
-      <div className='w-full px-32'>
+      <div className='w-full lg:px-32'>
         <Stats />
       </div>
 

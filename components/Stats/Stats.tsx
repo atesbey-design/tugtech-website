@@ -3,28 +3,30 @@ import React from 'react'
 
 const Stats = () => {
   return (
-    <div className='flex flex-row justify-between '>
+    <div className='flex flex-col justify-between lg:flex-row '>
       <div
-      data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
-       className='space-y-12'>
-        <h1 className='text-3xl tracking-wider leading-relaxed'>
+        data-aos='fade-right'
+        data-aos-offset='300'
+        data-aos-easing='ease-in-sine'
+        className='space-y-12'
+      >
+        <h1 className='lg:text-3xl text-xl tracking-wider lg:leading-relaxed'>
           Leading companies trust us{' '}
-          <span className='font-bold '><br /> to develop software</span>
+          <span className='font-bold '>
+            <br /> to develop software
+          </span>
         </h1>
         <a href='#'>
-          <h5 className='mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
+          <h5 className='lg:mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
             Need a help in Claim?
           </h5>
         </a>
-        <p className='mb-3 font-normal text-gray-500 text-lg leading-9'>
+        <p className='lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6'>
           We <span className='text-fuchsia-700'>add development capacity</span>{' '}
-          to tech teams. Our value isn’t <br />limited to building teams but is
-          equally distributed across the <br />
-           project lifecycle. We are a custom
-          software development company <br /> that guarantees the successful delivery
-          of your project.
+          to tech teams. Our value isn’t <br />
+          limited to building teams but is equally distributed across the <br />
+          project lifecycle. We are a custom software development company <br />{' '}
+          that guarantees the successful delivery of your project.
         </p>
         <a
           href='#'
@@ -32,7 +34,7 @@ const Stats = () => {
         >
           See more Informations
           <svg
-          className=' ms-2.5 rtl:rotate-[270deg]'
+            className=' ms-2.5 rtl:rotate-[270deg]'
             xmlns='http://www.w3.org/2000/svg'
             width='24'
             height='25'
@@ -59,9 +61,10 @@ const Stats = () => {
         </a>
       </div>
       <div
-      data-aos="fade-left"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
+        data-aos='fade-left'
+        data-aos-offset='300'
+        data-aos-easing='ease-in-sine'
+        
       >
         <Image
           src='/images/Rectangle.png'
