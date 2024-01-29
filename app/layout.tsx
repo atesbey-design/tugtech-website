@@ -53,7 +53,7 @@ export default function RootLayout ({
         <link rel='preconnect' href='https://fonts.gstatic.com' />
       </head>
 
-      <body className='w-screen h-full bg-white dark:bg-white'>
+      <body className='w-screen h-full bg-white dark:bg-white overflow-x-hidden'>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-P4BSM87L'
