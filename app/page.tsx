@@ -17,7 +17,6 @@ export default function Home () {
       </div>
 
       <div className='mb-32 grid  w-full h-full bg---Shade-light border border-fuchsia-100 '>
-        
         <Services />
       </div>
 
