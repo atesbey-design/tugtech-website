@@ -44,7 +44,10 @@ export default function RootLayout ({
         />
         <meta property='og:image' content='logo.png' />
         <meta property='og:url' content='https://tugtek.com' />
-        <meta property='og:site_name' content='TugTek Elektronik' />
+        <meta
+          property='og:site_name'
+          content='TugTek Elektronik Danışmanlık Ajansı'
+        />
 
         <meta
           property='og:description'
