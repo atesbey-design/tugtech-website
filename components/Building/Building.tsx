@@ -7,7 +7,6 @@ import 'aos/dist/aos.css'
 
 const CardData = [
   {
-    color: `light-blue`,
     title: 'Build the right team to scale',
     text: 'Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers. Our delivery model helps you cut costs and deliver within budget.',
     quote:
@@ -19,7 +18,6 @@ const CardData = [
     animation: 'fade-up'
   },
   {
-    color: 'light-green',
     title: 'Build the right team to scale',
     text: 'Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers. Our delivery model helps you cut costs and deliver within budget.',
     quote:
@@ -31,7 +29,6 @@ const CardData = [
     animation: 'fade-down'
   },
   {
-    color: 'light-pink',
     title: 'Build the right team to scale',
     quote:
       'Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules',
@@ -47,13 +44,13 @@ const CardData = [
 const Building = () => {
 
   return (
-    <div className='grid lg:grid-flow-row  gap-16 lg:px-32'>
+    <div className='grid lg:grid-flow-row  gap-16 lg:px-32 px-8'>
       {CardData.map((card, index) => (
         <div
           // data-aos='fade-down '
           data-aos-duration='3000'
           key={index}
-          className={`flex w-full lg:flex-row flex-col justify-around  items-center bg-${card.color} 
+          className={`flex w-full lg:flex-row flex-col justify-around  items-center bg-gray-100 rounded hover:bg-gray-50 px-2
           ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}
           `}
         >

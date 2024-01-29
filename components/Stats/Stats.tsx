@@ -13,7 +13,7 @@ const Stats = () => {
   return (
     <div className='flex flex-col justify-between lg:flex-row '>
       <div
-        data-aos='fade-right'
+        data-aos={`screenSize < 768 ? '' : 'fade-left` }
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
         className='space-y-12'
