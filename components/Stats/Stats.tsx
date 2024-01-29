@@ -3,28 +3,24 @@ import Image from 'next/image'
 import React, { use, useEffect, useState } from 'react'
 import useScreen from '../../libs/useScreen'
 
-
-
 const Stats = () => {
   const screenSize = useScreen()
-
-
 
   return (
     <div className='flex flex-col justify-between lg:flex-row '>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left` }
+        data-aos={`screenSize < 768 ? '' : 'fade-left`}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
         className='space-y-12'
       >
-        <h1 className='lg:text-3xl text-xl tracking-wider lg:leading-relaxed'>
+        <text className='lg:text-3xl text-xl tracking-wider lg:leading-relaxed'>
           Leading companies trust us{' '}
           <span className='font-bold '>
             <br /> to develop software
           </span>
-        </h1>
-        
+        </text>
+
         <p className='lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6'>
           We <span className='text-fuchsia-700'>add development capacity</span>{' '}
           to tech teams. Our value isn’t <br />
@@ -65,7 +61,7 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left` }
+        data-aos={`screenSize < 768 ? '' : 'fade-left`}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
       >
