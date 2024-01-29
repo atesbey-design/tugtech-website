@@ -51,7 +51,7 @@ const Building = () => {
           `}
         >
           <Image
-            className='  rounded-t-lg   md:rounded-none md:rounded-s-lg'
+            className='rounded-t-lg md:rounded-none md:rounded-s-lg'
             src={card.image}
             width={400}
             height={400}

@@ -5,15 +5,11 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 const Navbar = () => {
   const [isButtonActive, setIsButtonActive] = useState(false)
-  console.log(isButtonActive)
+
 
   const openMenu = () => {
     setIsButtonActive(!isButtonActive)
   }
-
-  useEffect(() => {
-    console.log(isButtonActive)
-  }, [isButtonActive])
 
   return (
     <nav className='bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 '>
