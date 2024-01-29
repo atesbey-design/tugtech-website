@@ -56,7 +56,7 @@ export default function RootLayout ({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </head>
 
-      <body className='w-screen h-full '>
+      <body className='w-screen h-full bg-white'>
         <div>
           <Navbar />
         </div>
