@@ -17,7 +17,7 @@ const Content = () => {
         data-aos='fade-up'
         className='flex flex-col justify-center space-y-8 lg-px-0 px-8'
       >
-        <div className='lg:text-6xl text-3xl leading-loose tracking-widest'>
+        <div className='lg:text-6xl text-3xl lg:leading-loose leading-relaxed lg:tracking-widest tracking-wider'>
         Solution  <span className='text-fuchsia-800 font-bold'>Your</span> is{' '}
           <br /> <span className='font-bold'> Leading</span>{' '}
           <span className='text-purple-800 font-bold'> Technology</span>
