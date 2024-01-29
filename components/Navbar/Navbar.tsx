@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
           <button
             
-            className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'
+            className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2  bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'
           >
             Contact us
           </button>

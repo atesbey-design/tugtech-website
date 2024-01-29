@@ -15,9 +15,9 @@ const Content = () => {
     <>
       <div
         data-aos='fade-up'
-        className='flex flex-col justify-center space-y-8 '
+        className='flex flex-col justify-center space-y-8 lg-px-0 px-8'
       >
-        <div className='lg:text-5xl text-3xl' >
+        <div className='lg:text-5xl text-3xl ' >
           Great <span className='text-fuchsia-800 font-bold'>Product</span> is{' '}
           <br /> <span className='font-bold'>built by great</span>{' '}
           <span className='text-purple-800 font-bold'> teams</span>

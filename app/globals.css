@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+.slide:hover {
+  flex: 5;
+}

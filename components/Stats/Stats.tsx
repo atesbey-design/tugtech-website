@@ -1,7 +1,15 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { use, useEffect, useState } from 'react'
+import useScreen from '../../libs/useScreen'
+
+
 
 const Stats = () => {
+  const screenSize = useScreen()
+
+
+
   return (
     <div className='flex flex-col justify-between lg:flex-row '>
       <div
@@ -17,7 +25,7 @@ const Stats = () => {
           </span>
         </h1>
         <a href='#'>
-          <h5 className='lg:mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
+          <h5 className='lg:mb-2 text-2xl font-semibold tracking-tight text-gray-900 '>
             Need a help in Claim?
           </h5>
         </a>
@@ -61,12 +69,12 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos='fade-left'
+        data-aos={`screenSize < 768 ? '' : 'fade-left` }
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
-        
       >
         <Image
+          className='lg:mt-0 mt-10'
           src='/images/Rectangle.png'
           alt='Picture of the author'
           width={500}

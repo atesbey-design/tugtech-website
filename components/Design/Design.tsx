@@ -45,7 +45,7 @@ const CardData = [
 const Design = () => {
   return (
     <div className='grid grid-rows-3 grid-flow-col  gap-4 px-32'>
-        {CardData.map((card, index) => (
+        {/* {CardData.map((card, index) => (
         <div
           key={index}
           className={` flex flex-row justify-around  items-center border border-gray-200 rounded-lg shadow  hover:bg-gray-100 px-2`}
@@ -67,7 +67,7 @@ const Design = () => {
             </p>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   )
 }
