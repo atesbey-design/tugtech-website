@@ -44,11 +44,11 @@ const CardData = [
 
 const Design = () => {
   return (
-    <div className='grid grid-rows-3 grid-flow-col  gap-4 px-32'>
-        {/* {CardData.map((card, index) => (
+    <div className='grid lg:grid-rows-3 lg:grid-flow-col  gap-4 lg:px-32 px-8'>
+        {CardData.map((card, index) => (
         <div
           key={index}
-          className={` flex flex-row justify-around  items-center border border-gray-200 rounded-lg shadow  hover:bg-gray-100 px-2`}
+          className={` flex lg:flex-row flex-col justify-around  items-center border border-gray-200 rounded-lg shadow  hover:bg-gray-100 px-2`}
         >
           <Image
             className={`bg-${card.color} rounded-lg p-2`}
@@ -67,7 +67,7 @@ const Design = () => {
             </p>
           </div>
         </div>
-      ))} */}
+      ))} 
     </div>
   )
 }

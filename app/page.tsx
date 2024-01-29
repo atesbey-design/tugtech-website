@@ -26,15 +26,15 @@ export default function Home () {
       <div className='w-full py-24 '>
         <PartnerShip />
       </div>
-      {/* 
+      
       <div className='border w-full  border-gray-100 bg-gray-50 py-24'>
-      <h2 className='text-center mb-8 lg:mb-16 text-3xl leading-loose tracking-wide md:text-4xl'>
+      <h2 className='text-center mb-8 lg:mb-16 text-2xl lg:leading-loose tracking-wide lg:text-4xl'>
         Our recent
         <span className='font-bold'>
           <br /> Case Studies
         </span>
       </h2>
-        <div className='flex justify-center items-center px-32'><CaseStudies /></div>
+        <div className='flex justify-center items-center lg:px-32 px-8'><CaseStudies /></div>
       </div>
 
       <div className='w-full py-24'>
@@ -48,7 +48,7 @@ export default function Home () {
       </div>
 
       <div className='w-full bg---Shade-light border border-fuchsia-100  py-24'>
-      <h2 className='text-center mb-8 lg:mb-16 text-3xl leading-loose tracking-wide md:text-4xl'>
+      <h2 className='text-center mb-8 lg:mb-16 lg:text-3xl text-2xl leading-loose tracking-wide md:text-4xl'>
         Our Design and
         <span className='font-bold'>
           <br /> Devolopment approach
@@ -58,14 +58,14 @@ export default function Home () {
       </div>
 
       <div className='w-full bg---Shade-light border border-fuchsia-100  py-24'>
-      <h2 className='text-center mb-8 lg:mb-16 text-3xl leading-loose tracking-wide md:text-4xl'>
+      <h2 className='text-center mb-8 lg:mb-16 lg:text-3xl text-2xl leading-loose tracking-wide md:text-4xl'>
         Our 
         <span className='font-bold'>
           <br /> Tech Stack
         </span>
       </h2>
         <TechStack />
-      </div> */}
+      </div> 
     </main>
   )
 }

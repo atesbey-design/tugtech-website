@@ -47,13 +47,13 @@ const CardData = [
 const Building = () => {
 
   return (
-    <div className='grid grid-flow-row gap-16 px-32'>
+    <div className='grid lg:grid-flow-row  gap-16 lg:px-32'>
       {CardData.map((card, index) => (
         <div
           // data-aos='fade-down '
           data-aos-duration='3000'
           key={index}
-          className={`flex w-full justify-around  items-center bg-${card.color} 
+          className={`flex w-full lg:flex-row flex-col justify-around  items-center bg-${card.color} 
           ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}
           `}
         >

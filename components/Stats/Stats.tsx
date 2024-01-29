@@ -24,11 +24,7 @@ const Stats = () => {
             <br /> to develop software
           </span>
         </h1>
-        <a href='#'>
-          <h5 className='lg:mb-2 text-2xl font-semibold tracking-tight text-gray-900 '>
-            Need a help in Claim?
-          </h5>
-        </a>
+        
         <p className='lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6'>
           We <span className='text-fuchsia-700'>add development capacity</span>{' '}
           to tech teams. Our value isn’t <br />

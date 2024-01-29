@@ -31,17 +31,14 @@ const CaseStudies = () => {
     
     <div
     
-    className='w-11/12 grid grid-flow-row gap-8'>
+    className='lg:w-11/12  grid grid-flow-row gap-8'>
       {CardData.map((card, index) => (
         <div
-
-
-        
           key={index}
           data-aos={card.animation}
      data-aos-offset="10"
      data-aos-easing="ease-in-sine" 
-          className={`flex flex-row w-full justify-around  items-center bg-${card.color} border border-gray-200 rounded-lg shadow  hover:bg-gray-100 `}
+          className={`flex lg:flex-row flex-col w-full justify-around  items-center bg-${card.color} border border-gray-200 rounded-lg shadow  hover:bg-gray-100 `}
         >
           <Image
             className='  rounded-t-lg   md:rounded-none md:rounded-s-lg'
@@ -51,10 +48,10 @@ const CaseStudies = () => {
             alt='Card Image Alt Text'
           />
           <div className='flex flex-col justify-between p-4 leading-normal w-full'>
-            <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 '>
+            <h5 className='mb-2 lg:text-2xl text-md font-bold tracking-tight text-gray-900 '>
               {card.title}
             </h5>
-            <p className='mb-3 font-normal text-balance  text-gray-700 dark:text-gray-400'>
+            <p className='mb-3 font-normal text-balance lg:text-xl text:sm text-gray-700 dark:text-gray-400'>
               {card.text} <br /> <br />
               <Link className='text-fuchsia-800 flex flex-row justify-end items-center pr-4' href='#'>
                 {' '}

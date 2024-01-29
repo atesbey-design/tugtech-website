@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer className='bg-white '>
       <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
-        <div className='flex justify-between w-full '>
+        <div className='flex lg:flex-row flex-col lg:justify-between justify-center  w-full '>
           <div className='mb-6 md:mb-0'>
             <Image src='/images/logo.png' width={200} alt='logo' height={200} />
             <p className='pt-4'>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Debitis, sint!</p>
           </div>
-          <div className='flex  gap-4 sm:gap-6 sm:grid-cols-3'>
+          <div className='flex lg:flex-row flex-col gap-4 sm:gap-8 sm:grid-cols-3'>
             <div>
               <h2 className='mb-4 text-sm font-bold text-gray-900 uppercase '>
                 Links
