@@ -1,24 +1,26 @@
+'use client'
+import useScreen from '@/libs/useScreen'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const CardData = [
   {
-    color: `light-blue`,
+    color: `bg-light-blue`,
     title: 'Website Design for SCFC Canada',
     text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
     image: '/images/Case-study1.png',
     animation : 'fade-right'
   },
   {
-    color: 'light-green',
+    color: 'bg-light-green',
     title: 'Website Design for SCFC Canada',
     text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
     image: '/images/Case-study2.png',
     animation : 'fade-left'
   },
   {
-    color: 'light-pink',
+    color: 'bg-light-pink',
     title: 'Website Design for SCFC Canada',
     text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
     image: '/images/Case-study3.png',
@@ -27,6 +29,7 @@ const CardData = [
 ]
 
 const CaseStudies = () => {
+  const screenSize = useScreen()
   return (
     
     <div
@@ -35,13 +38,13 @@ const CaseStudies = () => {
       {CardData.map((card, index) => (
         <div
           key={index}
-          data-aos={card.animation}
+          data-aos={`screenSize < 768 ? '' : 'fade-left` }
      data-aos-offset="10"
      data-aos-easing="ease-in-sine" 
-          className={`flex lg:flex-row flex-col w-full justify-around  items-center bg-${card.color} border border-gray-200 rounded-lg shadow  hover:bg-gray-100 `}
+          className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow  `}
         >
           <Image
-            className='  rounded-t-lg   md:rounded-none md:rounded-s-lg'
+            className='rounded-t-lg md:rounded-none md:rounded-s-lg'
             src={card.image}
             width={500}
             height={500}
