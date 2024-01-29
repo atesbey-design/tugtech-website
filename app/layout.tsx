@@ -23,7 +23,7 @@ export default function RootLayout ({
         <link rel='icon' href='logo.png' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#000000' />
-        <title>TugTek Elektronik </title>
+        <title>TugTek Elektronik Danışmanlık Ajansı </title>
         <meta
           name='description'
           content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
