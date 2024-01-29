@@ -1,12 +1,10 @@
-import type { Metadata } from 'next'
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })

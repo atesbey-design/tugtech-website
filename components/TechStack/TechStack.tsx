@@ -60,44 +60,7 @@ const TechStack = () => {
                 ))
             )}
 
-            {/* <Link href='#' className=''>
-              <Image src='/images/NodeJS.png' alt='' width={200} height={200} />
-            </Link>
-            <Link href='#' className=''>
-              <Image src='/images/PHP.png' alt='' width={200} height={200} />
-            </Link>
-            <Link href='#' className=''>
-              <Image
-                src={'/images/mon.png'}
-                alt='/iamges/mon.png'
-                width={200}
-                height={200}
-              />
-            </Link>
-            <Link href='#' className=''>
-              <Image
-                src={'/images/Mysql.png'}
-                alt='/images/Mysql.png'
-                width={200}
-                height={200}
-              />
-            </Link>
-            <Link href='#' className=''>
-              <Image
-                src={'/images/NETCore.png'}
-                alt=''
-                width={200}
-                height={200}
-              />
-            </Link>
-            <Link href='#' className='flex justify-center items-center'>
-              <Image
-                src={'/images/Python.png'}
-                alt=''
-                width={200}
-                height={200}
-              />
-            </Link> */}
+          
           </div>
         </div>
       </section>

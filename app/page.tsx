@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar/Navbar'
+
 import Content from '@/components/Content/Content'
 import Services from '@/components/Services/Services'
 import Stats from '@/components/Stats/Stats'

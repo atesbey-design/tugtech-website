@@ -51,9 +51,9 @@ const CaseStudies = () => {
             alt='Card Image Alt Text'
           />
           <div className='flex flex-col justify-between p-4 leading-normal w-full'>
-            <h5 className='mb-2 lg:text-2xl text-md font-bold tracking-tight text-gray-900 '>
+            <h4 className='mb-2 lg:text-2xl text-md font-bold tracking-tight text-gray-900 '>
               {card.title}
-            </h5>
+            </h4>
             <p className='mb-3 font-normal text-balance lg:text-xl text:sm text-gray-700 dark:text-gray-400'>
               {card.text} <br /> <br />
               <Link className='text-fuchsia-800 flex flex-row justify-end items-center pr-4' href='#'>

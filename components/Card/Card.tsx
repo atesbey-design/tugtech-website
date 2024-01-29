@@ -16,9 +16,9 @@ const Card = () => {
         Web Design / Development
       </text>
       <a href='#'>
-        <h5 className='mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
+        <h6 className='mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
           Need a help in Claim?
-        </h5>
+        </h6>
       </a>
       <p className='mb-3 font-normal text-gray-500 0'>
         A Website is an extension of yourself and we can help you to express it

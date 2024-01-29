@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 
@@ -65,9 +64,9 @@ const Design = () => {
             alt='Card Image Alt Text'
           />
           <div className='flex flex-col justify-between p-4 leading-normal w-full'>
-            <h5 className='mb-2  font-bold tracking-tight text-gray-900 '>
+            <h4 className='mb-2  font-bold tracking-tight text-gray-900 '>
               {card.title}
-            </h5>
+            </h4>
             <p className='mb-3 font-normal text-balancetext-gray-400'>
               {card.text} <br /> <br />
              
