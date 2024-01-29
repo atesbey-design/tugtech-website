@@ -19,8 +19,6 @@ export default function RootLayout ({
   return (
     <html lang='en'>
       <head>
-       
-
         <meta charSet='utf-8' />
         <link rel='icon' href='logo.png' />
         <link rel='manifest' href='/manifest.json' />
@@ -28,7 +26,7 @@ export default function RootLayout ({
         <title>TugTek</title>
         <meta
           name='description'
-          content='TugTek yeni nesil elektronik çözüm.'
+          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
         />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@tugtek' />
@@ -36,13 +34,13 @@ export default function RootLayout ({
         <meta name='twitter:title' content='TugTek' />
         <meta
           name='twitter:description'
-          content='TugTek yeni nesil elektronik çözüm.'
+          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
         />
         <meta name='twitter:image' content='logo.png' />
         <meta property='og:title' content='TugTek' />
         <meta
           property='og:description'
-          content='TugTek yeni nesil elektronik çözüm.'
+          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
         />
         <meta property='og:image' content='logo.png' />
         <meta property='og:url' content='https://tugtek.com' />
@@ -67,7 +65,7 @@ export default function RootLayout ({
         </div>
         <div className=''>
           {children}
-          <GoogleTagManager gtmId="G-G0KR9Y068Y" />
+          <GoogleTagManager gtmId='G-G0KR9Y068Y' />
           <SpeedInsights />
           <Analytics />
         </div>
