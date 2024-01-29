@@ -24,7 +24,7 @@ const TechStack = () => {
   };
   return (
     <div>
-      <div className='flex flex-row lg:text-xl space-x-8 justify-center items-center'>
+      <div className='flex flex-row lg:text-xl lg:space-x-8 space-x-2 justify-center items-center'>
         {buttonOptions.map((buttonOption) => (
             <button
                 key={buttonOption.id}
