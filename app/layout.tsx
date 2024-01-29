@@ -23,7 +23,7 @@ export default function RootLayout ({
         <link rel='icon' href='logo.png' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#000000' />
-        <title>TugTek</title>
+        <title>TugTek Elektronik </title>
         <meta
           name='description'
           content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
@@ -44,8 +44,17 @@ export default function RootLayout ({
         />
         <meta property='og:image' content='logo.png' />
         <meta property='og:url' content='https://tugtek.com' />
-        <meta property='og:site_name' content='TugTek' />
-        <meta property='og:locale' content='en_US' />
+        <meta property='og:site_name' content='TugTek Elektronik' />
+
+        <meta
+          property='og:description'
+          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
+        />
+        <meta
+          property='og:locale'
+          content='tr_TR
+        '
+        />
         <meta property='og:type' content='website' />
         <link rel='apple-touch-icon' href='logo.png' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
