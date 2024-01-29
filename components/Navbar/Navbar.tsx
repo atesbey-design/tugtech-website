@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { use, useEffect, useState } from 'react'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 
 
@@ -11,11 +12,7 @@ const Navbar = () => {
   console.log(isButtonActive)
 
   const openMenu = () => {
-    console.log('clicked')
     setIsButtonActive(!isButtonActive)
-    
-    console.log(isButtonActive)
-   
   }
 
   useEffect(() => {
@@ -67,39 +64,54 @@ const Navbar = () => {
           id='navbar-sticky'
         >
           <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
-            <li>
-              <a
-                href='#'
-                className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 '
-                aria-current='page'
-              >
-                Home
-              </a>
+            <li className='hover:bg-blue-700 rounded hover:text-white p-1ç'>
+            <ScrollLink
+            activeClass="active"
+            to="content"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </ScrollLink>
             </li>
-            <li>
-              <a
-                href='#services'
-                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 '
-              >
-                Services
-                
-              </a>
+            <li className='hover:bg-blue-700 rounded hover:text-white p-1'>
+            <ScrollLink
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Services
+          </ScrollLink>
             </li>
-            <li>
-              <a
-                href='/about'
-                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 '
-              >
-                About
-              </a>
+            <li className='hover:bg-blue-700 rounded hover:text-white p-1'>
+              
+              <ScrollLink
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About us
+            </ScrollLink>
             </li>
-            <li>
-              <a
-                href='/contact'
-                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 '
-              >
-                Contact
-              </a>
+            <li className='hover:bg-blue-700 rounded hover:text-white p-1'>
+            <ScrollLink
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Projects
+            </ScrollLink>
             </li>
           </ul>
         </div>

@@ -11,15 +11,15 @@ import TechStack from '@/components/TechStack/TechStack'
 export default function Home () {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between '>
-      <div className=' w-full h-full  flex justify-around py-40 '>
+      <div id="content"  className=' w-full h-full  flex justify-around py-40 '>
         <Content />
       </div>
 
-      <div className='mb-32 grid w-full h-full bg---Shade-light border border-fuchsia-100 '>
+      <div id="services" className='mb-32 grid w-full h-full bg---Shade-light border border-fuchsia-100 '>
         <Services />
       </div>
 
-      <div className='w-full lg:px-32 px-8'>
+      <div id="about" className='w-full lg:px-32 px-8'>
         <Stats />
       </div>
 
@@ -27,7 +27,7 @@ export default function Home () {
         <PartnerShip />
       </div>
       
-      <div className='border w-full  border-gray-100 bg-gray-50 py-24'>
+      <div id="project" className='border w-full  border-gray-100 bg-gray-50 py-24'>
       <h2 className='text-center mb-8 lg:mb-16 text-2xl lg:leading-loose tracking-wide lg:text-4xl'>
         Our recent
         <span className='font-bold'>
