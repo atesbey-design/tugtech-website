@@ -47,7 +47,6 @@ const Building = () => {
     <div className='grid lg:grid-flow-row  gap-16 lg:px-32 px-8'>
       {CardData.map((card, index) => (
         <div
-          // data-aos='fade-down '
           data-aos-duration='3000'
           key={index}
           className={`flex w-full lg:flex-row flex-col justify-around  items-center bg-gray-100 rounded hover:bg-gray-50 px-2
