@@ -3,38 +3,38 @@ import Image from 'next/image'
 
 const CardData = [
     {
-      color: `bg-black`,
+      color: `bg-gray-300`,
       title: 'UX Driven Engineering',
       text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
       image: '/images/Rocket.png',
      
     },
     {
-      color: 'bg-pink-400',
+      color: 'bg-pink-200',
       title: 'Developing Shared Understanding',
       text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
       image: '/images/Heart.png'
     },
     {
-      color: 'bg-yellow-400',
+      color: 'bg-yellow-200',
       title: 'Proven Experience and Expertise',
       text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
       image: '/images/Success.png'
     },
     {
-        color: 'bg-blue-400',
+        color: 'bg-blue-200',
         title: 'Security & Intellectual Property (IP)',
         text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
         image: '/images/Code.png'
       },
       {
-        color: 'bg-green-400',
+        color: 'bg-green-200',
         title: 'Code Reviews',
         text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
         image: '/images/Shield.png'
       },
       {
-        color: 'bg-fuchsia-400',
+        color: 'bg-fuchsia-200',
         title: 'Quality Assurance & Testing',
         text: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
         image: '/images/Padlock.png'
@@ -50,13 +50,11 @@ const Design = () => {
         {CardData.map((card, index) => (
         <div
           key={index}
-          className={` flex lg:flex-row flex-col justify-around  items-center border border-gray-200 rounded-lg shadow  hover:bg-gray-100 px-2`}
+          className={` flex lg:flex-row flex-col justify-around rounded-lg items-center border border-gray-200  shadow  hover:bg-gray-100 px-2`}
         >
           <Image
             className={
-             `${card.color} rounded-lg  mt-2 lg:mt-0 md:rounded-none md:rounded-lg p-1`
-               
-              
+             `${card.color} rounded-lg  mt-2 lg:mt-0   p-1`
             }
             src={card.image}
             width={60}

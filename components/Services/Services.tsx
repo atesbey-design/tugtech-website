@@ -8,18 +8,16 @@ const Services = () => {
 
   const CardData = [
     {
-      title: "Web & Desktop Application",
-      description: "Professional web and desktop application development to meet your business needs.",
-    },
-    
- 
-    {
-      title: "Server Setup & Consultancy",
-      description: "Reliable server setup and expert consultancy services for seamless operations.",
+      title: "Web & Desktop Uygulama Geliştirme",
+      description: " İş ihtiyaçlarınızı karşılamak için profesyonel web ve masaüstü uygulama geliştirme.",
     },
     {
-      title: "E-Commerce Sales Analysis Consultancy",
-      description: "Strategic guidance for e-commerce businesses through detailed sales analysis consultancy.",
+      title: "IOT Elektronik Tasarım Proje",
+      description: "Sensörler, mikrodenetleyiciler ve iletişim protokollerini entegre ederek, günlük yaşamı kolaylaştıran ve verimliliği artıran özelleştirilmiş elektronik çözümler",
+    },
+    {
+      title: "Server Kurulum & Danışmanlık",
+      description: "İşletmelerin ihtiyaçlarına uygun güvenilir sunucu altyapısı kurulumu sağlıyor, aynı zamanda uzman danışmanlık ile sistemlerini optimize etmelerine destek oluyoruz.",
     },
   ];
   
@@ -28,7 +26,7 @@ const Services = () => {
   return (
     <div className='bg-[#F9F9FF] flex-col flex justify-center items-center py-4  '>
       <text className='font-bold text-2xl lg:text-4xl bg---Gray-900 my-12'>
-        Services we offer
+      Sunduğumuz Hizmetler
       </text>
 
       <div className='flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-4  w-[80%]'>

@@ -3,6 +3,9 @@ import Image from 'next/image'
 import React from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Backend from '@/data/Backend'
+import marked from 'marked'
+import { get } from 'http'
 
 const Content = () => {
   React.useEffect(() => {
@@ -10,6 +13,7 @@ const Content = () => {
       duration: 1000
     })
   }, [])
+
   return (
     <>
       <div
@@ -20,18 +24,17 @@ const Content = () => {
           Geleceğin <span className='text-fuchsia-800 font-bold'>Elektrik</span>{' '}
           ve <br /> <span className='font-bold'>Elektronik</span>{' '}
           <span className='text-purple-800 font-bold'> Çözümleri</span>
-          
         </div>
 
         <h1 className='text-m lg:text-xl text-gray-500 '>
-          At Tugtek, we help you move your business into the <br />
-          future with our expertise in electronic consulting, software <br />
-          development and hardware solutions. Our team leading the digital{' '}
-          <br /> transformation is here to achieve your goals with you.
+          Tugtek olarak, Konya'da işinizi geleceğe taşımanıza yardımcı oluyoruz <br />
+          elektronik danışmanlık ve yazılım alanındaki uzmanlığımızla geleceğe <br />
+          geliştirme ve donanım çözümleri. Dijital teknolojiye liderlik eden <br />
+          ekibimiz dönüşüm hedefleri̇ni̇ze si̇zi̇nle bi̇rli̇kte ulaşmak i̇çi̇n burada. <br />
         </h1>
         <div>
           <button className='h-14 bg-gradient-to-r bg-blue-700 rounded text-white p-2 px-4 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500'>
-            Lets get started!
+            Hadi Başlayalım!
           </button>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Card = ({
         href='#'
         className='inline-flex items-center text-blue-600 hover:underline'
       >
-        See our guideline
+       Detaylar
         <svg
           className='w-3 h-3 ms-2.5 rtl:rotate-[270deg]'
           aria-hidden='true'

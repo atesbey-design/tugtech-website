@@ -1,4 +1,3 @@
-
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
@@ -24,7 +23,7 @@ export default function RootLayout ({
         <title>TugTek Elektronik Danışmanlık Ajansı </title>
         <meta
           name='description'
-          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
+          content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."
         />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:site' content='@tugtek' />
@@ -32,13 +31,13 @@ export default function RootLayout ({
         <meta name='twitter:title' content='TugTek' />
         <meta
           name='twitter:description'
-          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
+          content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."
         />
         <meta name='twitter:image' content='logo.png' />
         <meta property='og:title' content='TugTek' />
         <meta
           property='og:description'
-          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
+          content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."
         />
         <meta property='og:image' content='logo.png' />
         <meta property='og:url' content='https://tugtek.com' />
@@ -49,7 +48,7 @@ export default function RootLayout ({
 
         <meta
           property='og:description'
-          content='Elektronik dünyasında lider olan TugTek, en son teknoloji ürünleri ve çözümleriyle müşterilerine benzersiz deneyimler sunuyor. Elektronik projeleriniz için güvenilir partneriniz olan TugTek ile tanışın. '
+          content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."
         />
         <meta
           property='og:locale'
