@@ -5,14 +5,44 @@ import Footer from '@/components/Footer/Footer'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
 import { GoogleTagManager } from '@next/third-parties/google'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
+export const metadata : Metadata = {
+  title: 
+  
+    {
+       default : "TugTek Elektronik Danışmanlık Ajansı",
+       template : "%s | TugTek ",
+    }
+  ,
+  description:
+    "TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin.",
+
+  openGraph: {
+    type: 'website',
+    locale: 'tr_TR',
+    url: 'https://tugtek.com',
+    siteName: 'TugTek Elektronik Danışmanlık Ajansı',
+    images: [
+      {
+        url: '/logo.png',
+        width: 120,
+        height: 120,
+        alt: 'TugTek Logo'
+      }
+    ]
+  },
+  
+}
+
 
 export default function RootLayout ({
   children
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
   return (
     <html lang='en'>
       <head>
@@ -20,7 +50,7 @@ export default function RootLayout ({
         <link rel='icon' href='logo.png' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#000000' />
-        <title>TugTek Elektronik Danışmanlık Ajansı </title>
+       
         <meta
           name='description'
           content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."

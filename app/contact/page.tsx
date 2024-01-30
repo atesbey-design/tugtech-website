@@ -1,6 +1,14 @@
 import React from 'react'
+import { Metadata } from 'next'
+export const metadata : Metadata = {
+  title: 'İletişim'
+  ,
+  
+}
 
 const page = () => {
+
+
   return (
     <>
       <div className='container my-24  mx-auto md:px-6'>
