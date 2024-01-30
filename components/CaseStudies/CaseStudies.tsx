@@ -56,13 +56,14 @@ const CaseStudies = () => {
             </h4>
             <p className='mb-3 font-normal text-balance lg:text-xl text:sm text-gray-700 dark:text-gray-400'>
               {card.text} <br /> <br />
-              <Link className='text-fuchsia-800 flex flex-row justify-end items-center pr-4' href='#'>
+              <Link className='text-fuchsia-800 flex flex-row justify-end items-center pr-4 hover:underline' href='#'>
                 {' '}
                 Read more{' '}
                 <svg
+                className='pt-1'
                   xmlns='http://www.w3.org/2000/svg'
-                  width='20'
-                  height='20'
+                  width='30'
+                  height='30'
                   viewBox='0 0 16 16'
                   fill='none'
                 >
@@ -94,10 +95,10 @@ const CaseStudies = () => {
           </div>
         </div>
       ))}
-      <Link href={"<3"} className='flex justify-end text-fuchsia-800 font-bold'>Read more case studies  <svg
+      <Link href={"<3"} className='flex justify-end  text-fuchsia-800 font-bold hover:underline pt-1'>Read more case studies  <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  width='20'
-                  height='20'
+                  width='25'
+                  height='25'
                   viewBox='0 0 16 16'
                   fill='none'
                   

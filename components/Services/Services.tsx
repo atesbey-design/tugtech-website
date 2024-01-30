@@ -31,7 +31,7 @@ const Services = () => {
         Services we offer
       </text>
 
-      <div className='flex lg:flex-row flex-col lg:space-x-4 lg:space-y-0 space-y-4  w-[80%]'>
+      <div className='flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-4  w-[80%]'>
         {
           CardData.map((card, index) => (
           

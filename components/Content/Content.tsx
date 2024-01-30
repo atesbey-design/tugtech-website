@@ -12,20 +12,22 @@ const Content = () => {
   }, [])
   return (
     <>
-
       <div
         data-aos='fade-up'
         className='flex flex-col justify-center space-y-8 lg-px-0 px-8'
       >
-        <div className='lg:text-6xl text-3xl lg:leading-loose leading-relaxed lg:tracking-widest tracking-wider'>
-        Solution  <span className='text-fuchsia-800 font-bold'>Your</span> is{' '}
-          <br /> <span className='font-bold'> Leading</span>{' '}
-          <span className='text-purple-800 font-bold'> Technology</span>
+        <div className='lg:text-6xl text-4xl lg:leading-tight leading-tight lg:tracking-widest tracking-wider'>
+          Geleceğin <span className='text-fuchsia-800 font-bold'>Elektrik</span>{' '}
+          ve <br /> <span className='font-bold'>Elektronik</span>{' '}
+          <span className='text-purple-800 font-bold'> Çözümleri</span>
+          
         </div>
+
         <h1 className='text-m lg:text-xl text-gray-500 '>
-        At Tugtek, we help you move your business into the <br />
-         future with our expertise in electronic consulting, software <br />
-         development and hardware solutions. Our team leading the digital <br /> transformation is here to achieve your goals with you.
+          At Tugtek, we help you move your business into the <br />
+          future with our expertise in electronic consulting, software <br />
+          development and hardware solutions. Our team leading the digital{' '}
+          <br /> transformation is here to achieve your goals with you.
         </h1>
         <div>
           <button className='h-14 bg-gradient-to-r bg-blue-700 rounded text-white p-2 px-4 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500'>

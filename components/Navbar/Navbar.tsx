@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { use, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
           <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2  bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'>
-            Contact us
+            İletişime geç!
           </button>
           <button
             onClick={openMenu}
@@ -71,7 +71,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                Home
+                Anasayfa
               </ScrollLink>
             </li>
             <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                Services
+                Hizmetler
               </ScrollLink>
             </li>
             <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
@@ -93,7 +93,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                About us
+                Hakkımızda
               </ScrollLink>
             </li>
             <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                Projects
+                Projeler
               </ScrollLink>
             </li>
           </ul>
