@@ -21,7 +21,6 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                x
               </ScrollLink>
 
 
@@ -31,7 +30,7 @@ const Navbar = () => {
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
           <Link href='/contact ' className='w-full h-full'>
-            <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2  bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'>
+            <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 hover:bg-gradient-to-r bg-gradient-to-r  hover:from-fuchsia-500 hover:to-violet-500 from-violet-500 to-fuchsia-500 p-2 text-white'>
               İletişime geç
             </button>
           </Link>
@@ -68,7 +67,7 @@ const Navbar = () => {
           id='navbar-sticky'
         >
           <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
-            <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
+            <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-2 lg:px-4 '>
               <ScrollLink
                 to='content'
                 spy={true}
@@ -79,7 +78,7 @@ const Navbar = () => {
                 Anasayfa
               </ScrollLink>
             </li>
-            <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
+            <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-2 lg:px-4 '>
               <ScrollLink
                 to='services'
                 spy={true}
@@ -90,7 +89,7 @@ const Navbar = () => {
                 Hizmetler
               </ScrollLink>
             </li>
-            <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
+            <li className='hover:bg-blue-700 rounded hover:text-white p-2 cursor-pointer lg:px-4 '>
               <ScrollLink
                 to='about'
                 spy={true}
@@ -101,7 +100,7 @@ const Navbar = () => {
                 Hakkımızda
               </ScrollLink>
             </li>
-            <li className='hover:bg-blue-700 rounded hover:text-white p-1 lg:px-4 '>
+            <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-2 lg:px-4 '>
               <ScrollLink
                 to='project'
                 spy={true}
