@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 const Navbar = () => {
   const [isButtonActive, setIsButtonActive] = useState(false)
-
 
   const openMenu = () => {
     setIsButtonActive(!isButtonActive)
@@ -13,23 +13,27 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 '>
-      <div
-      className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-         <ScrollLink
-                to='content'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-               <Image src='/images/logo.png' width={120} alt='logo' height={120} />
-              </ScrollLink>
-        
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+        {/* <ScrollLink
+          to='content'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          href='/'
+        >
+         
+        </ScrollLink> */}
+        <Link href='/'>
+          <Image src='/images/logo.png' width={120} alt='logo' height={120} />
+        </Link>
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
-          <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2  bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'>
-            İletişime geç!
-          </button>
+          <Link href='/contact ' className='w-full h-full'>
+            <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2  bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2 text-white'>
+              İletişime geç
+            </button>
+          </Link>
           <button
             onClick={openMenu}
             data-collapse-toggle='navbar-sticky'
