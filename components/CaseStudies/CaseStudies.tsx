@@ -4,29 +4,39 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const CardData = [
+const ProjectData = [
   {
-    color: `bg-light-blue`,
-    title: 'Website Design for SCFC Canada',
-    text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
-    image: '/images/Case-study1.png',
-    animation : 'fade-right'
+    color: 'bg-light-blue',
+    title: 'Akıllı Ev Otomasyonu Projesi',
+    description: 'Ev otomasyonu sistemi, farklı odalardaki cihazları uzaktan kontrol etme imkanı sunar. Arduino, Bluetooth modülü, hareket sensörleri ve röleler kullanılarak tasarlandı.',
+    image: '/images/akilli-ev.jpeg',
+    imageAlt: 'Smart Home Automation',
+    technologies: ['Arduino', 'Bluetooth', 'Hareket Sensörleri', 'Röleler'],
+    benefits: ['Enerji tasarrufu', 'Uzaktan erişim', 'Konfor artışı'],
+    animation: 'fade-right'
   },
   {
     color: 'bg-light-green',
-    title: 'Website Design for SCFC Canada',
-    text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
-    image: '/images/Case-study2.png',
-    animation : 'fade-left'
+    title: 'Güneş Enerjili Şarj Cihazı',
+
+    description: 'Taşınabilir cihazlar için güneş enerjili şarj cihazı, güneş panelleri, Li-ion pil ve güneş takip sistemi kullanılarak geliştirildi. Yenilenebilir enerji kaynaklarından faydalanarak çevre dostu bir çözüm sunar.',
+    image: '/images/günes-enerjili.jpeg',
+    imageAlt: 'Solar Charger',
+    technologies: ['Güneş Panelleri', 'Li-ion Pil', 'Güneş Takip Sistemi', 'Mikrodenetleyici'],
+    benefits: ['Yenilenebilir enerji kullanımı', 'Taşınabilir cihazların şarj edilebilirliği', 'Çevre dostu'],
+    animation: 'fade-left'
   },
   {
-    color: 'bg-light-pink',
-    title: 'Website Design for SCFC Canada',
-    text: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
-    image: '/images/Case-study3.png',
-    animation : 'fade-right'
+    color: 'bg-light-green',
+    title: 'Akıllı Tarım Sistemi',
+    description: 'Tarım alanında kullanılan sensörler ve IoT teknolojisi ile entegre bir akıllı tarım sistemini içeren proje. Toprak nemini, sıcaklığı ve bitki büyümesini izleyerek çiftçilere verimlilik sağlar.',
+    image: '/images/akilli-tarim.jpeg',
+    technologies: ['IoT', 'Tarım Sensörleri', 'Veri Analizi', 'Mobil Uygulama'],
+    benefits: ['Verimli su kullanımı', 'Bitki sağlığının izlenmesi', 'Verimli ürün yetiştirme'],
+    animation: 'fade-right'
   }
-]
+];
+
 
 const CaseStudies = () => {
   const screenSize = useScreen()
@@ -35,30 +45,33 @@ const CaseStudies = () => {
     <div
     
     className='lg:w-11/12  grid grid-flow-row gap-8'>
-      {CardData.map((card, index) => (
+      {ProjectData.map((card, index) => (
         <div
           key={index}
           data-aos={`screenSize < 768 ? '' : 'fade-left` }
      data-aos-offset="10"
      data-aos-easing="ease-in-sine" 
-          className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow  `}
+
+          className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow min-h-[300px]`}
         >
-          <Image
-            className='rounded-t-lg md:rounded-none md:rounded-s-lg'
-            src={card.image}
-            width={500}
-            height={500}
-            alt='Card Image Alt Text'
-          />
+          <img
+  src={card.image}
+  alt={card.imageAlt}
+  className={`rounded-lg shadow-lg ${card.animation}`}
+  style={{ width: '30%', height: '100%', objectFit: 'cover'}}
+/>
+
+
+
           <div className='flex flex-col justify-between p-4 leading-normal w-full'>
             <h4 className='mb-2 lg:text-2xl text-md font-bold tracking-tight text-gray-900 '>
               {card.title}
             </h4>
             <p className='mb-3 font-normal text-balance lg:text-xl text:sm text-gray-700 dark:text-gray-400'>
-              {card.text} <br /> <br />
+              {card.description} <br /> <br />
               <Link className='text-fuchsia-800 flex flex-row justify-end items-center pr-4 hover:underline' href='#'>
                 {' '}
-                Read more{' '}
+                  Detaylar 
                 <svg
                 className='pt-1'
                   xmlns='http://www.w3.org/2000/svg'
@@ -95,7 +108,10 @@ const CaseStudies = () => {
           </div>
         </div>
       ))}
-      <Link href={"<3"} className='flex justify-end  text-fuchsia-800 font-bold hover:underline pt-1'>Read more case studies  <svg
+      <Link href={"<3"} className='flex justify-end  text-fuchsia-800 font-bold hover:underline pt-1'>
+          
+                  Tüm projeleri gör
+           <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='25'
                   height='25'
