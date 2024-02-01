@@ -62,7 +62,7 @@ export default function Home () {
     <h2
       className='text-white text-3xl lg:text-4xl font-bold tracking-wide'
     >
-      Yetenek elektrik gibidir. Pek anlamıyoruz ama kullanıyoruz. 
+      Elektrik merkezileşmez, merkezsizleşir.
         <span className='text-xl text-gray-200 text-end'>
           <br />  - Philip Stanhope
         </span>
