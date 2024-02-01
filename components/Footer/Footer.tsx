@@ -1,14 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className='bg-white '>
       <div className='mx-auto w-full max-w-screen-xl p-4 lg:py-6 lg:py-8'>
         <div className='flex lg:flex-row flex-col lg:justify-between justify-center  w-full '>
           <div className='mb-6 md:mb-0'>
-            <Image src='/images/logo.png' width={200} alt='logo' height={200} />
-         <p className='text-gray-500 text-sm font-medium'>
+            <Link href='/'>
+        <Image src='/images/logo.png' width={200} alt='logo' height={200} />
+        </Link>
+         <p className='text-gray-500 text-sm font-medium p-2'>
           Elekronik Ticaret ve Yazılım Hizmetleri
         </p>
 

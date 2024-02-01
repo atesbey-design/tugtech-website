@@ -37,21 +37,13 @@ export default function Home () {
         <div className='flex justify-center items-center lg:px-32 px-8'><CaseStudies /></div>
       </div>
 
-      {/* <div className='w-full py-24'>
-      <h2 className='text-center mb-8 lg:mb-16 text-3xl leading-loose tracking-wide md:text-4xl'>
-        Why of building
-        <span className='font-bold'>
-          <br /> Great Software
-        </span>
-      </h2>
-        <Building />
-      </div> */}
+  
 
       <div className='w-full bg---Shade-light border border-fuchsia-100  py-24'>
       <h2 className='text-center mb-8 lg:mb-16 lg:text-3xl text-2xl leading-loose tracking-wide md:text-4xl'>
-        Bunlar Üzerinde 
+        Geliştirme yaparken kullandığımız
         <span className='font-bold'>
-          <br />  Duruyoruz
+          <br />  Tekonolojiler
         </span>
       </h2>
         <Design />
@@ -59,13 +51,29 @@ export default function Home () {
 
       <div className='w-full bg---Shade-light border border-fuchsia-100  py-24'>
       <h2 className='text-center mb-8 lg:mb-16 lg:text-3xl text-2xl leading-loose tracking-wide md:text-4xl'>
-        Our 
+        Kullandığımız 
         <span className='font-bold'>
-          <br /> Tech Stack
+          <br /> Teknolojiler
         </span>
       </h2>
         <TechStack />
+        <div className='w-screen justify-center items-center text-center  bg-blue-600 py-40'>
+      
+    <h2
+      className='text-white text-3xl lg:text-4xl font-bold tracking-wide'
+    >
+      Yetenek elektrik gibidir. Pek anlamıyoruz ama kullanıyoruz. 
+        <span className='text-xl text-gray-200 text-end'>
+          <br />  - Philip Stanhope
+        </span>
+
+    </h2>
+
+  
+      </div>
       </div> 
+
+
     </main>
   )
 }
