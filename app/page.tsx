@@ -29,15 +29,15 @@ export default function Home () {
       
       <div id="project" className='border w-full  border-gray-100 bg-gray-50 py-24'>
       <h2 className='text-center mb-8 lg:mb-16 text-2xl lg:leading-loose tracking-wide lg:text-4xl'>
-        Our recent
+      Geçmişten günümüze
         <span className='font-bold'>
-          <br /> Case Studies
+          <br />  Projelerimiz
         </span>
       </h2>
         <div className='flex justify-center items-center lg:px-32 px-8'><CaseStudies /></div>
       </div>
 
-      <div className='w-full py-24'>
+      {/* <div className='w-full py-24'>
       <h2 className='text-center mb-8 lg:mb-16 text-3xl leading-loose tracking-wide md:text-4xl'>
         Why of building
         <span className='font-bold'>
@@ -45,13 +45,13 @@ export default function Home () {
         </span>
       </h2>
         <Building />
-      </div>
+      </div> */}
 
       <div className='w-full bg---Shade-light border border-fuchsia-100  py-24'>
       <h2 className='text-center mb-8 lg:mb-16 lg:text-3xl text-2xl leading-loose tracking-wide md:text-4xl'>
-        Our Design and
+        Bunlar Üzerinde 
         <span className='font-bold'>
-          <br /> Devolopment approach
+          <br />  Duruyoruz
         </span>
       </h2>
         <Design />
