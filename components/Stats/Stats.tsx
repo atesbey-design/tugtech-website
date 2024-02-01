@@ -5,11 +5,12 @@ import useScreen from '../../libs/useScreen'
 
 const Stats = () => {
   const screenSize = useScreen()
+  console.log(screenSize)
 
   return (
     <div className='flex flex-col justify-between lg:flex-row '>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left`}
+        data-aos={screenSize < 768 ? '' : 'fade-right'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
         className='space-y-12'
@@ -64,7 +65,7 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left`}
+        data-aos={screenSize < 768 ? '' : 'fade-left'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
       >
