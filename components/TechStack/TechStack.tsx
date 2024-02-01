@@ -20,17 +20,18 @@ const buttonOptions = [
 ]
 
 const TechStack = () => {
-  const [isButtonActive, setIsButtonActive] = useState(false)
-  const [selectedButton, setSelectedButton] = useState(0)
+  const [isButtonActive, setIsButtonActive] = useState(true); // isButtonActive'u true yaparak başlangıçta seçili olmasını sağla
+  const [selectedButton, setSelectedButton] = useState(1);
 
   const clickHandler = (buttonName: any) => {
-    setIsButtonActive(true)
-    setSelectedButton(buttonName)
-  }
+    setIsButtonActive(true);
+    setSelectedButton(buttonName);
+  };
+
   return (
     <div>
       <div className='flex flex-row lg:text-xl lg:space-x-8 space-x-2 justify-center items-center'>
-        {buttonOptions.map(buttonOption => (
+        {buttonOptions.map((buttonOption) => (
           <button
             key={buttonOption.id}
             className={`${
@@ -50,22 +51,20 @@ const TechStack = () => {
         <div className='py-8 lg:py-16 mx-auto  max-w-screen-xl px-4'>
           <div className='flex justify-center items-center text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 '>
             {buttonOptions.map(
-              buttonOption =>
+              (buttonOption) =>
                 isButtonActive &&
                 selectedButton === buttonOption.id &&
-                buttonOption.values?.map(value => (
+                buttonOption.values?.map((value) => (
                   <Link key={value} href='#' className=''>
                     <Image src={value} alt='' width={200} height={200} />
                   </Link>
                 ))
             )}
-
-          
           </div>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default TechStack
+export default TechStack;
