@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <div className='flex flex-col justify-between lg:flex-row '>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left`}
+        data-aos={screenSize < 768 ? '' : 'fade-right'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
         className='space-y-12'
@@ -22,13 +22,17 @@ const Stats = () => {
         </text>
 
         <p className='lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6'>
-          Tugtek, <span className='text-fuchsia-700'>elektrik, elektronik ve teknoloji</span>{' '} alanındaki uzmanlığı ile
-          işletmenizin enerji <br />
-          verimliliğini artırmanıza, güvenliği sağlamanıza ve teknolojik 
-          dönüşümü yönetmenize <br /> yardımcı oluyor. 
-          Sunduğumuz danışmanlık hizmetleri, yenilikçi çözümlerle işletmenizi<br />
-          geleceğe taşımanız için stratejik bir rehberlik sunuyor. 
-          Tugtek ile işinizi daha güvenli, <br /> daha verimli ve daha rekabetçi bir
+          Tugtek,{' '}
+          <span className='text-fuchsia-700'>
+            elektrik, elektronik ve teknoloji
+          </span>{' '}
+          alanındaki uzmanlığı ile işletmenizin enerji <br />
+          verimliliğini artırmanıza, güvenliği sağlamanıza ve teknolojik
+          dönüşümü yönetmenize <br /> yardımcı oluyor. Sunduğumuz danışmanlık
+          hizmetleri, yenilikçi çözümlerle işletmenizi
+          <br />
+          geleceğe taşımanız için stratejik bir rehberlik sunuyor. Tugtek ile
+          işinizi daha güvenli, <br /> daha verimli ve daha rekabetçi bir
           seviyeye taşıyın.
         </p>
         <a
@@ -64,7 +68,7 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos={`screenSize < 768 ? '' : 'fade-left`}
+        data-aos={screenSize < 768 ? '' : 'fade-left'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
       >
