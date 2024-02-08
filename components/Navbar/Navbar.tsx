@@ -13,18 +13,15 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 '>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto '>
         <Link href='/'>
-          <Image src='/images/logo.png' width={120} alt='logo' height={120} />
+          <Image src='/ikon1.png' width={80} alt='logo' height={80} />
         </Link>
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
           <Link href='/contact ' className='w-full h-full'>
             <button
-              className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 hover:bg-gradient-to-r bg-gradient-to-r  hover:from-fuchsia-500 hover:to-violet-500 from-violet-500 to-fuchsia-500 p-4 text-white
-            
-            transition:all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-4
-            '
+              className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'
             >
               İletişime geç
             </button>
@@ -74,10 +71,7 @@ const Navbar = () => {
               </ScrollLink>
             </li>
             <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-4 lg:px-4 '>
-              <Link
-                href='/services'>
-                Hizmetler
-              </Link>
+              <Link href='/services'>Hizmetler</Link>
             </li>
             <li className='hover:bg-blue-700 rounded hover:text-white p-4 cursor-pointer lg:px-4 '>
               <ScrollLink

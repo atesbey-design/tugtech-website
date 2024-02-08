@@ -7,6 +7,7 @@ import Building from '@/components/Building/Building'
 import Design from '@/components/Design/Design'
 import TechStack from '@/components/TechStack/TechStack'
 import Link from 'next/link'
+import Blog from '@/components/Blog/Blog'
 
 export default function Home () {
   return (
@@ -63,21 +64,24 @@ export default function Home () {
           </span>
         </h2>
         <TechStack />
-        <div className='w-screen flex justify-center items-center my-12'>
-          <div className=' w-3/4 rounded-2xl flex flex-row justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>
-            <h2 className='text-gray-700  text-3xl lg:text-4xl font-bold tracking-wide'>
-              Elektrik merkezileşmez, merkezsizleşir.
-              <span className='text-xl text-gray-500 text-end'>
-                <br /> - Philip Stanhope
-              </span>
-            </h2>
-            <div>
-              <button
-               
-              className='bg-gradient-to-r from-[#FFC656] to-[#F16063] rounded-lg text-white p-4'>
-                <Link  href='/contact'>İletişime Geç!</Link>
-              </button>
-            </div>
+      </div>
+
+      <div className='w-full flex justify-center items-center bg---Shade-light border border-fuchsia-100  py-24'>
+        <Blog />
+      </div>
+
+      <div className='w-screen flex justify-center items-center my-12'>
+        <div className=' w-3/4 rounded-2xl flex flex-row justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>
+          <h2 className='text-gray-700  text-3xl lg:text-4xl font-bold tracking-wide'>
+            Elektrik merkezileşmez, merkezsizleşir.
+            <span className='text-xl text-gray-500 text-end'>
+              <br /> - Philip Stanhope
+            </span>
+          </h2>
+          <div>
+            <button className='bg-gradient-to-r from-[#FFC656] to-[#F16063] rounded-lg text-white p-4'>
+              <Link href='/contact'>İletişime Geç!</Link>
+            </button>
           </div>
         </div>
       </div>

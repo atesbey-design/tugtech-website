@@ -80,7 +80,7 @@ const page = () => {
                               İletişim
                             </h3>
                             <p className='text-white text-sm '>
-                              Mobil: +1 (123) 456-7890
+                              Mobil: +90 539 612 4256
                             </p>
                             <p className='text-white text-sm '>
                               Mail: benengintugrul@gmail.com

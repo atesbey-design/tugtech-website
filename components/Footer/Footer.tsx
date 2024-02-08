@@ -76,7 +76,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href='#' className='hover:underline '>
-                    +923183561921
+                    +90 539 612 4256
                   </a>
                 </li>
               </ul>
