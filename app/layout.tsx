@@ -1,3 +1,5 @@
+
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
@@ -6,6 +8,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Metadata } from 'next'
+
+import { notFound } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata : Metadata = {
@@ -44,7 +48,7 @@ export default function RootLayout ({
 }>) {
 
   return (
-    <html lang='en'>
+    <html lang='tr'>
       <head>
         <meta charSet='utf-8' />
         <link rel='icon' href='logo.png' />

@@ -4,22 +4,22 @@ import React, { use, useEffect, useState } from 'react'
 import useScreen from '../../libs/useScreen'
 
 const Stats = () => {
-  const screenSize = useScreen()
+
 
   return (
-    <div className='flex flex-col justify-between lg:flex-row '>
+    <div className='flex flex-col justify-between lg:flex-row gap-0 '>
       <div
-        data-aos={screenSize < 768 ? '' : 'fade-right'}
+        data-aos='fade-right'
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
-        className='space-y-12'
+        className='space-y-6'
       >
-        <text className='lg:text-3xl text-xl tracking-wider lg:leading-relaxed'>
+        <h1 className='lg:text-3xl text-xl tracking-wider '>
           Yazılım geliştirme için{' '}
           <span className='font-bold '>
             <br /> önde gelen şirketler bize güveniyor
           </span>
-        </text>
+        </h1>
 
         <p className='lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6'>
           Tugtek,{' '}
@@ -68,16 +68,19 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos={screenSize < 768 ? '' : 'fade-left'}
+        data-aos={'fade-left'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
       >
         <Image
-          className='lg:mt-0 mt-10'
-          src='/images/Rectangle.png'
+          className='lg:mt-0 mt-10
+              rounded-lg shadow-lg
+          '
+          src='/images/elektrik.jpg'
           alt='Picture of the author'
           width={500}
-          height={500}
+          height={600}
+
         ></Image>
       </div>
     </div>

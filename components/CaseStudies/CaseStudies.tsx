@@ -2,7 +2,7 @@
 import useScreen from '@/libs/useScreen'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const ProjectData = [
   {
@@ -27,7 +27,7 @@ const ProjectData = [
     animation: 'fade-left'
   },
   {
-    color: 'bg-light-green',
+    color: 'bg-light-yellow',
     title: 'Akıllı Tarım Sistemi',
     description: 'Tarım alanında kullanılan sensörler ve IoT teknolojisi ile entegre bir akıllı tarım sistemini içeren proje. Toprak nemini, sıcaklığı ve bitki büyümesini izleyerek çiftçilere verimlilik sağlar.',
     image: '/images/akilli-tarim.jpeg',
@@ -39,20 +39,26 @@ const ProjectData = [
 
 
 const CaseStudies = () => {
-  const screenSize = useScreen()
+
+
+
   return (
     
     <div
     
-    className='lg:w-11/12  grid grid-flow-row gap-8'>
+    className='lg:w-11/12  grid grid-flow-row gap-8
+    
+          
+    '>
       {ProjectData.map((card, index) => (
         <div
           key={index}
-          data-aos={`screenSize < 768 ? '' : 'fade-left` }
+          data-aos="fade-right"
      data-aos-offset="10"
      data-aos-easing="ease-in-sine" 
 
-          className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow min-h-[300px]`}
+          className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow min-h-[300px]
+           `}
         >
           <img
   src={card.image}
@@ -64,6 +70,13 @@ const CaseStudies = () => {
 
 
           <div className='flex flex-col justify-between p-4 leading-normal w-full'>
+
+            <div
+                className='dynamic-div'
+            >
+              </div>
+   
+   
             <h4 className='mb-2 lg:text-2xl text-md font-bold tracking-tight text-gray-900 '>
               {card.title}
             </h4>
