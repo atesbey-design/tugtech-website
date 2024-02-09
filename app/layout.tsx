@@ -51,7 +51,7 @@ export default function RootLayout ({
     <html lang='tr'>
       <head>
         <meta charSet='utf-8' />
-        <link rel='icon' href='logo.png' />
+        <link rel='icon' href='/favicon.ico' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#000000' />
         <link rel="icon" href="/favicon.ico" sizes="any" />

@@ -66,9 +66,9 @@ export default function Home () {
         <TechStack />
       </div>
 
-      <div className='w-full flex justify-center items-center bg---Shade-light border border-fuchsia-100  py-24'>
+      {/* <div className='w-full flex justify-center items-center bg---Shade-light border border-fuchsia-100  py-24'>
         <Blog />
-      </div>
+      </div> */}
 
       <div className='w-screen flex justify-center items-center my-12'>
         <div className=' w-3/4 rounded-2xl flex flex-row justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>

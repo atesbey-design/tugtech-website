@@ -12,17 +12,15 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 '>
+    <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto '>
         <Link href='/'>
-          <Image src='/ikon1.png' width={80} alt='logo' height={80} />
+          <Image src='/logo.png' width={120} alt='logo' height={120} />
         </Link>
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
           <Link href='/contact ' className='w-full h-full'>
-            <button
-              className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'
-            >
+            <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'>
               İletişime geç
             </button>
           </Link>
