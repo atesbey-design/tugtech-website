@@ -65,7 +65,7 @@ const Blog = () => {
 
       <div className='lg:w-1/2 pt-12'>
         {blogCard.map((blog, index) => (
-          <div className=' '>
+          <div key={index} className=' '>
             <div
               className='flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden'
               title='Woman holding a mug'
