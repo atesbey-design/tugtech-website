@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ml-4'>
-        <Link href='/'>
-          <Image src='/logo.png' width={120} alt='logo' height={120} />
+      <div className='lg:max-w-screen-xl flex flex-wrap items-center justify-between lg:mx-auto px-10 '>
+        <Link className='lg:ml-10' href='/'>
+          <Image src='/logo.png' width={100} alt='logo' height={100} />
         </Link>
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
@@ -28,11 +28,10 @@ const Navbar = () => {
             onClick={openMenu}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-4   justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
+            className='inline-flex items-center lg:p-4 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
-            <span className='sr-only'>Open main menu</span>
             <svg
               className='w-5 h-5'
               aria-hidden='true'
@@ -56,7 +55,7 @@ const Navbar = () => {
           } md:flex md:items-center w-full md:w-auto`}
           id='navbar-sticky'
         >
-          <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
+          <ul className='flex flex-col  p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
             <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-4 lg:px-4 '>
               <ScrollLink
                 to='content'

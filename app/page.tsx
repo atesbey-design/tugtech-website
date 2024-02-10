@@ -12,7 +12,10 @@ import Blog from '@/components/Blog/Blog'
 export default function Home () {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between '>
-      <div id='content' className=' w-full h-full  flex justify-around py-40 '>
+      <div
+        id='content'
+        className=' w-full h-full  flex lg:justify-around justify-center  py-40 '
+      >
         <Content />
       </div>
 

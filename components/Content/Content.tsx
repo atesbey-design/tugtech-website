@@ -15,10 +15,7 @@ const Content = () => {
   }, [])
 
   return (
-    <div
-      className='flex flex-col lg:flex-row justify-between items-center lg:px-8 px-4 py-8 lg:py-0'
-   
-    >
+    <div className='flex flex-col lg:flex-row lg:justify-between justify-center items-center lg:px-8 px-4 py-4 lg:py-0'>
       <div
         data-aos='fade-up'
         className='flex flex-col justify-center space-y-8 lg-px-0s px-8'
@@ -29,8 +26,7 @@ const Content = () => {
           <span className='text-purple-800 font-bold'> Çözümleri</span>
         </div>
         <h1 className={'text-m lg:text-xl text-gray-500 '}>
-          Tugtek olarak,  da işinizi geleceğe taşımanıza yardımcı oluyoruz{' '}
-          <br />
+          Tugtek olarak, da işinizi geleceğe taşımanıza yardımcı oluyoruz <br />
           elektronik danışmanlık ve yazılım alanındaki uzmanlığımızla geleceğe{' '}
           <br />
           geliştirme ve donanım çözümleri. Dijital teknolojiye liderlik eden{' '}
@@ -39,10 +35,12 @@ const Content = () => {
           <br />
         </h1>
         <div>
-          <button className='h-14 bg-gradient-to-r bg-blue-700 rounded text-white p-2 px-4 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 
+          <button
+            className='h-14 bg-gradient-to-r bg-blue-700 rounded text-white p-2 px-4 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 
           
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110
-          '>
+          '
+          >
             Hadi Başlayalım!
           </button>
         </div>

@@ -1,5 +1,3 @@
-
-
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
@@ -12,14 +10,11 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
-export const metadata : Metadata = {
-  title: 
-  
-    {
-       default : "TugTek Elektronik Danışmanlık Ajansı",
-       template : "%s | TugTek ",
-    }
-  ,
+export const metadata: Metadata = {
+  title: {
+    default: 'TugTek Elektronik Danışmanlık Ajansı',
+    template: '%s | TugTek '
+  },
   description:
     "TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin.",
 
@@ -36,17 +31,14 @@ export const metadata : Metadata = {
         alt: 'TugTek Logo'
       }
     ]
-  },
-  
+  }
 }
-
 
 export default function RootLayout ({
   children
 }: Readonly<{
   children: React.ReactNode
 }>) {
-
   return (
     <html lang='tr'>
       <head>
@@ -54,8 +46,8 @@ export default function RootLayout ({
         <link rel='icon' href='/favicon.ico' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#000000' />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-       
+        <link rel='icon' href='/favicon.ico' sizes='any' />
+
         <meta
           name='description'
           content="TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin."
