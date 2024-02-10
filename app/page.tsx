@@ -66,20 +66,20 @@ export default function Home () {
         <TechStack />
       </div>
 
-      {/* <div className='w-full flex justify-center items-center bg---Shade-light border border-fuchsia-100  py-24'>
+      <div className='w-full flex justify-center items-center bg---Shade-light border border-fuchsia-100  lg:py-24 py-12'>
         <Blog />
-      </div> */}
+      </div>
 
       <div className='w-screen flex justify-center items-center my-12'>
-        <div className=' w-3/4 rounded-2xl flex flex-row justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>
+        <div className=' lg:w-3/4  lg:rounded-2xl flex lg:flex-row flex-col justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>
           <h2 className='text-gray-700  text-3xl lg:text-4xl font-bold tracking-wide'>
             Elektrik merkezileşmez, merkezsizleşir.
-            <span className='text-xl text-gray-500 text-end'>
+            <span className='lg:text-xl text-sm text-gray-500 text-end'>
               <br /> - Philip Stanhope
             </span>
           </h2>
           <div>
-            <button className='bg-gradient-to-r from-[#FFC656] to-[#F16063] rounded-lg text-white p-4'>
+            <button className='bg-gradient-to-r from-[#FFC656] to-[#F16063] rounded-lg text-white p-4 lg:mt-0 mt-8'>
               <Link href='/contact'>İletişime Geç!</Link>
             </button>
           </div>
