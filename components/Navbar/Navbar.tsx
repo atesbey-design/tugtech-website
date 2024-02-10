@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto '>
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ml-4'>
         <Link href='/'>
           <Image src='/logo.png' width={120} alt='logo' height={120} />
         </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
             onClick={openMenu}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-4 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
+            className='inline-flex items-center p-4   justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >

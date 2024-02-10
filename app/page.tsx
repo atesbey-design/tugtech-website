@@ -70,7 +70,7 @@ export default function Home () {
         <Blog />
       </div>
 
-      <div className='w-screen flex justify-center items-center my-12'>
+      <div className='lg:w-screen flex justify-center items-center my-12'>
         <div className=' lg:w-3/4  lg:rounded-2xl flex lg:flex-row flex-col justify-around items-center text-center  bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] py-40'>
           <h2 className='text-gray-700  text-3xl lg:text-4xl font-bold tracking-wide'>
             Elektrik merkezileşmez, merkezsizleşir.
@@ -79,7 +79,7 @@ export default function Home () {
             </span>
           </h2>
           <div>
-            <button className='bg-gradient-to-r from-[#FFC656] to-[#F16063] rounded-lg text-white p-4 lg:mt-0 mt-8'>
+            <button className='bg-gradient-to-r from-[#FFC656] font-bold to-[#F16063] rounded-lg text-white p-4 lg:mt-0 mt-8'>
               <Link href='/contact'>İletişime Geç!</Link>
             </button>
           </div>
