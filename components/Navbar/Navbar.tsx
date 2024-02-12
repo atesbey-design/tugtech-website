@@ -13,14 +13,14 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2'>
-      <div className='lg:max-w-screen-xl flex flex-wrap items-center justify-between lg:mx-auto px-10 '>
-        <Link className='lg:ml-10' href='/'>
+      <div className='lg:max-w-screen-xl flex flex-wrap items-center justify-between lg:mx-auto  px-4'>
+        <Link className='lg:ml-10 ' href='/'>
           <Image src='/logo.png' width={100} alt='logo' height={100} />
         </Link>
 
-        <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
+        <div className='flex md:order-2  space-x-2'>
           <Link href='/contact ' className='w-full h-full'>
-            <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'>
+            <button className=' rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'>
               İletişime geç
             </button>
           </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
             onClick={openMenu}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center lg:p-4 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
+            className='inline-flex items-center lg:p-4 justify-center text-sm text-gray-500 rounded rotate-0 hover:rotate-90 p-1 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
@@ -49,6 +49,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
         <div
           className={`${
             isButtonActive ? 'flex' : 'hidden'

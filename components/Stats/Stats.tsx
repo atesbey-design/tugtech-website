@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <div className='flex flex-col justify-between lg:flex-row gap-0 '>
       <div
-        data-aos='fade-right'
+        data-aos='-right'
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
         className='space-y-6'
@@ -68,7 +68,7 @@ const Stats = () => {
         </a>
       </div>
       <div
-        data-aos={'fade-left'}
+        data-aos={'-left'}
         data-aos-offset='300'
         data-aos-easing='ease-in-sine'
       >

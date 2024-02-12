@@ -15,7 +15,7 @@ const Content = () => {
   }, [])
 
   return (
-    <div className='flex flex-col lg:flex-row lg:justify-between justify-center items-center lg:px-8 px-4 py-4 lg:py-0'>
+    <div className='flex flex-col lg:flex-row lg:justify-between  lg:px-8 px-4 py-4 lg:py-0'>
       <div
         data-aos='fade-up'
         className='flex flex-col justify-center space-y-8 lg-px-0s px-8'
