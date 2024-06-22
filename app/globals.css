@@ -6,3 +6,82 @@
 .slide:hover {
   flex: 5;
 }
+
+
+.omtun-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.omtun-logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.omtun-logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.omtun-logo:hover .omtun-logo-img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.omtun-logo:hover span {
+  color: #FFA500;
+  transition: color 0.3s;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+  .navbar {
+  display: none;
+  }
+  .hero-orange  {
+   height: min-content;
+  }
+  .gallery-images {
+    grid-template-columns: 1fr; /* Tek sütun yapar */
+    gap: 10px; /* Daha küçük boşluklar */
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float .whatsapp-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .vehicle-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .navbar .menu-toggle {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
