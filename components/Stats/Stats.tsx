@@ -15,7 +15,6 @@ const Stats = () => {
         <h1 className="lg:text-3xl text-xl tracking-wider ">
           Neden Tugtek Elektronik?
         </h1>
-
         <p
           className="lg:mb-3 font-normal text-gray-500 lg:text-lg text-m lg:leading-9 leading-6"
           style={{ maxWidth: "600px", wordWrap: "break-word" }}
@@ -25,8 +24,8 @@ const Stats = () => {
             Elektronik, Ar-Ge, IoT ve Yazılım
           </span>{" "}
           alanlarında sunduğu hizmetlerle işletmenizi geleceğe taşımanız için
-          stratejik bir rehberlik sunuyor. Tugtek'in uzman kadrosu ve yenilikçi
-          çözümleri sayesinde iş süreçlerinizi optimize edebilir,
+          stratejik bir rehberlik sunuyor. Tugtek&apos;in uzman kadrosu ve
+          yenilikçi çözümleri sayesinde iş süreçlerinizi optimize edebilir,
           verimliliğinizi artırabilir ve rekabet gücünüzü yükseltebilirsiniz.
           Elektronik danışmanlık, Ar-Ge projeleri, IoT çözümleri ve yazılım
           geliştirme konularında geniş bir yelpazede hizmet sunarak,
