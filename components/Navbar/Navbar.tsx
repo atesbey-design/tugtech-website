@@ -12,14 +12,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ml-4'>
+    <nav className='bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 py-2 px-6'>
+      <div className='max-w-full-xl flex flex-wrap items-center justify-between mx-auto ml-4'>
         <Link href='/'>
           <Image src='/logo.png' width={120} alt='logo' height={120} />
         </Link>
 
         <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
-          <Link href='/contact ' className='w-full h-full'>
+          <Link href="https://api.whatsapp.com/send?phone=+905102232313&text={current webpage url}" className='w-full h-full'>
             <button className='md:flex sm:flex md:justify-end sm:justify-end rounded h-1/2 bg-indigo-700  hover:bg-indigo-600 text-white p-2'>
               İletişime geç
             </button>
@@ -44,7 +44,7 @@ const Navbar = () => {
                 stroke='currentColor'
                 stroke-linecap='round'
                 stroke-linejoin='round'
-                stroke-width='2'
+                strokeWidth='2'
                 d='M1 1h15M1 7h15M1 13h15'
               />
             </svg>

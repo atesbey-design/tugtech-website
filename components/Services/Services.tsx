@@ -7,19 +7,19 @@ import 'aos/dist/aos.css'
 const Services = () => {
   const CardData = [
     {
-      title: 'Web & Desktop Uygulama Geliştirme',
+      title: 'Yazılım Uygulamaları Geliştirme',
       description:
-        ' İş ihtiyaçlarınızı karşılamak için profesyonel web ve masaüstü uygulama geliştirme.'
+        ' İş ihtiyaçlarınızı karşılamak için profesyonel yazılım geliştirme hizmetleri sunuyoruz. İhtiyaçlarınıza uygun özelleştirilmiş yazılım çözümleri ile iş süreçlerinizi optimize ediyoruz.'
     },
     {
-      title: 'IOT Elektronik Tasarım Proje',
+      title: 'Ar-Ge Hizmetleri',
       description:
-        'Sensörler, mikrodenetleyiciler ve iletişim protokollerini entegre ederek, günlük yaşamı kolaylaştıran ve verimliliği artıran özelleştirilmiş elektronik çözümler'
+        'Donanım, gömülü yazılım, mekanik tasarım alanlarında Ar-Ge hizmetleri sunuyoruz. Ürünlerinizin geliştirilmesi ve iyileştirilmesi için en son teknolojileri kullanıyoruz.'
     },
-    {
-      title: 'Server Kurulum & Danışmanlık',
+        {
+      title: 'IoT Çözümleri',
       description:
-        'İşletmelerin ihtiyaçlarına uygun güvenilir sunucu altyapısı kurulumu sağlıyor, aynı zamanda uzman danışmanlık ile sistemlerini optimize etmelerine destek oluyoruz.'
+        "Nesnelerin interneti (IoT) teknolojileri ile cihazlarınızı birbirine bağlayarak verimliliği artırın. IoT çözümleri ile iş süreçlerinizi optimize edin."
     }
   ]
 

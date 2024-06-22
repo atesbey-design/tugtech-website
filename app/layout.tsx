@@ -16,18 +16,18 @@ export const metadata : Metadata = {
   title: 
   
     {
-       default : "TugTek Elektronik Danışmanlık Ajansı",
+       default : "TugTek Elektronik Ar-Ge ve Yazılım Hizmetleri",
        template : "%s | TugTek ",
     }
   ,
   description:
-    "TugTek, Konya'da elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin.",
+    "TugTek, Türkiye'de elektronik dünyasında lider konumunda bulunuyor. Müşterilerimize en son teknoloji ürünleri ve çözümleriyle benzersiz deneyimler sunarak elektronik projelerinizde güvenilir bir ortak olmaktadır. Elektronik çözümleriniz için Konya'nın önde gelen ismi TugTek'i tercih edin ve işinizi en iyi şekilde optimize edin.",
 
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
     url: 'https://tugtek.com',
-    siteName: 'TugTek Elektronik Danışmanlık Ajansı',
+    siteName: "TugTek Elektronik Ar-Ge ve Yazılım Hizmetleri",
     images: [
       {
         url: '/logo.png',
@@ -95,7 +95,9 @@ export default function RootLayout ({
         <link rel='preconnect' href='https://fonts.gstatic.com' />
       </head>
 
-      <body className='w-screen h-full bg-white dark:bg-white overflow-x-hidden'>
+      <body className='w-screen h-full bg-white dark:bg-white overflow-x-hidden
+      
+      '>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-P4BSM87L'
