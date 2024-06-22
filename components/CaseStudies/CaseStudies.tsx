@@ -99,7 +99,7 @@ const CaseStudies = () => {
           className={`flex lg:flex-row flex-col w-full justify-around  items-center ${card.color} border border-gray-200 rounded-lg shadow min-h-[300px]
            `}
         >
-          <Image
+          <img
             src={card.image}
             alt={card.imageAlt?.toString()? card.imageAlt : "TugTek"}
             className={`rounded-lg shadow-lg ${card.animation}`}

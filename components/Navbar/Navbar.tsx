@@ -28,11 +28,10 @@ const Navbar = () => {
             onClick={openMenu}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-4   justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
+            className='inline-flex items-center lg:p-4 justify-center text-sm text-gray-500 rounded rotate-0 hover:rotate-90 p-1 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
-            <span className='sr-only'>Open main menu</span>
             <svg
               className='w-5 h-5'
               aria-hidden='true'
@@ -50,13 +49,14 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
         <div
           className={`${
             isButtonActive ? 'flex' : 'hidden'
           } md:flex md:items-center w-full md:w-auto`}
           id='navbar-sticky'
         >
-          <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
+          <ul className='flex flex-col  p-4 md:p-0 mt-4 font-medium border border-gray-100  w-full rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white '>
             <li className='hover:bg-blue-700 rounded hover:text-white cursor-pointer p-4 lg:px-4 '>
               <ScrollLink
                 to='content'
