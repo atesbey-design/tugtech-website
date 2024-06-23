@@ -10,6 +10,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
+
 export const metadata : Metadata = {
   title: 
   
@@ -89,6 +90,8 @@ export default function RootLayout ({
         <link rel='apple-touch-icon' href='logo.png' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
       </head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-374078539"></script>
+
 
       <body className='w-screen h-full bg-white dark:bg-white overflow-x-hidden
       
@@ -100,16 +103,8 @@ export default function RootLayout ({
             width='0'
             className='hidden'
           ></iframe>
-        </noscript>,
-        <noscript>
-          <iframe
-           src="https://www.googletagmanager.com/gtag/js?id=AW-374078539"
-            height='0'
-            width='0'
-            className='hidden'
-          ></iframe>
         </noscript>
-        
+      
 
         
         <div>
