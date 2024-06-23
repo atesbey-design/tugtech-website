@@ -100,7 +100,18 @@ export default function RootLayout ({
             width='0'
             className='hidden'
           ></iframe>
+        </noscript>,
+        <noscript>
+          <iframe
+           src="https://www.googletagmanager.com/gtag/js?id=AW-374078539"
+            height='0'
+            width='0'
+            className='hidden'
+          ></iframe>
         </noscript>
+        
+
+        
         <div>
           <Navbar />
         </div>
