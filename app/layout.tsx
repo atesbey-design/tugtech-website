@@ -89,8 +89,9 @@ export default function RootLayout ({
         <meta property='og:type' content='website' />
         <link rel='apple-touch-icon' href='logo.png' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
-      </head>
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-374078539"></script>
+
+      </head>
 
 
       <body className='w-screen h-full bg-white dark:bg-white overflow-x-hidden
